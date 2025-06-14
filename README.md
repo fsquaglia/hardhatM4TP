@@ -1,13 +1,49 @@
-# Sample Hardhat Project
+# TipJar - Contrato de propinas en Ethereum
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## Requisitos
 
-Try running some of the following tasks:
+- Node.js
+- Hardhat con Ethers.js
+- Alchemy
+- Cuenta en Sepolia con ETH
 
-```shell
-npx hardhat help
+## Configuración
+
+1. Instalar dependencias:
+
+```bash
+npm install
+```
+
+2. Agregar variables a .env ALCHEMY_API_KEY="" SEPOLIA_PRIVATE_KEY=""
+   ETHERSCAN_API_KEY=""
+
+3. Compilar
+
+```bash
+npx hardhat compile
+```
+
+4. Testear
+
+```bash
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+```
+
+5. Deployar en Sepolia
+
+```bash
+npx hardhat run ignition/modules/Deploy.js --network sepolia
+```
+
+6. Interactuar
+
+##### Editar el archivo scripts/interactTipJar.js comentando y descomentando las líneas necesarias dentro de la función:
+
+"async function main() {..."
+
+Correr con:
+
+```bash
+npx hardhat run scripts/interactTipJar.js
 ```
