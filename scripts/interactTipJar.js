@@ -1,9 +1,3 @@
-// import { ethers } from "ethers";
-// import * as dotenv from "dotenv";
-// import tipJarABI from "../artifacts/contracts/TipJar.sol/TipJar.json" assert { type: "json" };
-
-// dotenv.config();
-
 const { ethers } = require("ethers");
 const dotenv = require("dotenv");
 const tipJarABI = require("../artifacts/contracts/TipJar.sol/TipJar.json");

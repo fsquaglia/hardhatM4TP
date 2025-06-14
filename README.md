@@ -47,6 +47,8 @@ npx hardhat run ignition/modules/Deploy.js --network sepolia
 
 "async function main() {..."
 
+##### Modificar la variable TIPJAR_ADDRESS con el contrato deployado por el usuario
+
 Correr con:
 
 ```bash
