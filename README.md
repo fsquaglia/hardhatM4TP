@@ -15,8 +15,13 @@
 npm install
 ```
 
-2. Agregar variables a .env ALCHEMY_API_KEY="" SEPOLIA_PRIVATE_KEY=""
-   ETHERSCAN_API_KEY=""
+2. Agregar variables a .env
+
+```bash
+ALCHEMY_API_KEY=""
+SEPOLIA_PRIVATE_KEY=""
+ETHERSCAN_API_KEY=""
+```
 
 3. Compilar
 

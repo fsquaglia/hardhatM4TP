@@ -1,11 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
-/** @type import('hardhat/config').HardhatUserConfig */
-// module.exports = {
-//   solidity: "0.8.28",
-// };
-
 // ################ hardhat.config.js #################
 console.log("ALCHEMY_API_KEY:", process.env.ALCHEMY_API_KEY);
 
